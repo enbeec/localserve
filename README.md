@@ -1,6 +1,14 @@
 # localserve
 a script for working with serve and json-server
 
+Here's what it does:
+
+- asks you if you want to re-initialize your database
+- runs json-server for you using the `--watch` flag
+- runs serve for you
+- reminds you of the port numbers you picked
+- when you press `ctrl+c` it cleans everything up!
+
 ## Installation
 
 ### Prepare your project
