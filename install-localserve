@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # https://codefather.tech/blog/bash-get-script-directory/
 REPO_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
@@ -7,6 +9,18 @@ location="$1"
 
 [[ -z $location ]] && [[ ! -d $location ]] && echo provide the full path of the directory where you want localserve && exit 1
 
-files"init-database.sh start-servers.sh localserve"
+cd $location
+mkdir localserve
+cd localserve
 
-for $f in $files; do cp $f $location/.; done
+files="init-database.sh start-servers.sh localserve"
+
+for f in $files 
+do 
+	cp $REPO_DIR/$f .
+done
+
+ln -s localserve/localserve my-localserve
+
+echo "CREATED: shortcut named 'my-localserve' but feel free to rename it"
+echo "REMEMBER: customize the variables in $location/my-localserve"
