@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# https://codefather.tech/blog/bash-get-script-directory/
+REPO_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+
+location="$1"
+
+[[ -z $location ]] && [[ ! -d $location ]] && echo provide the full path of the directory where you want localserve && exit 1
+
+files"init-database.sh start-servers.sh localserve"
+
+for $f in $files; do cp $f $location/.; done
