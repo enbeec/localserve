@@ -23,9 +23,6 @@ JSRV_DBFILE="./api/db.json"
 JSRV_PORT="8081"
 SRV_PORT="8080"
 
-# you dont have to keep localserve's extras in the same place I do :)
-LS_DIR="ls-scripts"
-
 ## ------- FROM HERE ON OUT, IT'S ALL BASH: YOU'VE BEEN WARNED -------
 # ===================================================================> EXEC
 # check to see if already running
@@ -38,9 +35,9 @@ STARTSCRIPT=start-servers.sh
     echo please run me from $WORKING_DIR or override with '-f' && exit 200
 
 # init the database
-./$DEVSCRIPT_DIR/init-database.sh $INITDBFILE $JSRV_DBFILE
+./init-database.sh $INITDBFILE $JSRV_DBFILE
 
 echo # spacer
 
 # start the servers
-./$DEVSCRIPT_DIR/$STARTSCRIPT $JSRV_PORT $JSRV_DBFILE $SRV_PORT $SRV_SRCDIR
+./$STARTSCRIPT $JSRV_PORT $JSRV_DBFILE $SRV_PORT $SRV_SRCDIR
