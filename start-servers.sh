@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # ========================================================================> VARS
-JSRV_LOGFILE="./dev-scripts/json-server.log"
-SRV_LOGFILE="./dev-scripts/serve.log"
+JSRV_LOGFILE="./json-server.log"
+SRV_LOGFILE="./serve.log"
 
 ## ------- FROM HERE ON OUT, IT'S ALL BASH: YOU'VE BEEN WARNED -------
 # ========================================================================> ARGS
