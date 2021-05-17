@@ -37,9 +37,9 @@ STARTSCRIPT=start-servers.sh
     echo please run me from $WORKING_DIR or override with '-f' && exit 200
 
 # init the database
-./SCRIPT_DIR/init-database.sh $INITDBFILE $JSRV_DBFILE
+./$SCRIPT_DIR/init-database.sh $INITDBFILE $JSRV_DBFILE
 
 echo # spacer
 
 # start the servers
-./SCRIPT_DIR/$STARTSCRIPT $JSRV_PORT $JSRV_DBFILE $SRV_PORT $SRV_SRCDIR
+./$SCRIPT_DIR/$STARTSCRIPT $JSRV_PORT $JSRV_DBFILE $SRV_PORT $SRV_SRCDIR
