@@ -23,6 +23,8 @@ JSRV_DBFILE="./api/db.json"
 JSRV_PORT="8081"
 SRV_PORT="8080"
 
+SCRIPT_DIR="localserve"
+
 ## ------- FROM HERE ON OUT, IT'S ALL BASH: YOU'VE BEEN WARNED -------
 # ===================================================================> EXEC
 # check to see if already running
