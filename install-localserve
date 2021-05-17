@@ -20,7 +20,7 @@ do
 	cp $REPO_DIR/$f .
 done
 
-ln -s localserve/localserve my-localserve
+ln -s localserve/localserve ../my-localserve
 
 echo "CREATED: shortcut named 'my-localserve' but feel free to rename it"
 echo "REMEMBER: customize the variables in $location/my-localserve"
