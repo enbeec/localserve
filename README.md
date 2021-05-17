@@ -16,6 +16,7 @@ $ cp api/db.json api/db.json.init
 
 ### Install the script
 Clone this repo and run `./install-localserve my_project_dir`.
+Edit the newly created 'my-localserve' file and set the variables for your project's name (or the name of the working directory) and your database files. You can also set custom port numbers here. The defaults are 8080 for serve and 8081 for json-server.
 
 ### Optional, but strongly recommended!
 Also, it's a good idea to add the following to your `.gitignore` so you don't track transient things like logfiles and live database files:
