@@ -4,8 +4,6 @@
 #   edit the VARS below
 #   open each .sh file mentioned here and edit VARS if needed (optional)
 
-## USAGE ==>> ./localserve from your repository root
-
 # ===================================================================> VARS
 # localserve will make sure you only run it from the right folder
 WORKING_DIR="my-project" 
