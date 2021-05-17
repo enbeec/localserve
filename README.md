@@ -25,3 +25,8 @@ Also, it's a good idea to add the following to your `.gitignore` so you don't tr
 api/db.json
 */json-server.log
 */serve.log
+json-server.log
+serve.log
+```
+
+You can also just copy the `.gitignore` included in the repo.
