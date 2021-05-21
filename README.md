@@ -38,3 +38,7 @@ serve.log
 ```
 
 You can also just copy the `.gitignore` included in the repo.
+
+## Known Issues
+
+Right now you can't run two localserve sites at once, but this is a pretty easy limitation to bypass. Hit me up if you want that!
