@@ -1,6 +1,8 @@
 # localserve
 a script for working with serve and json-server
 
+![an example of localserve from my daily journal project](https://vcvcvc-dev.us-east-1.linodeobjects.com/localserve.gif)
+
 Here's what it does:
 
 - asks you if you want to re-initialize your database
